@@ -1,0 +1,6 @@
+com/example/vulnerable/model/User.class
+com/example/vulnerable/repository/UserRepository.class
+com/example/vulnerable/DataInitializer.class
+com/example/vulnerable/controller/UserController.class
+com/example/vulnerable/service/UserService.class
+com/example/vulnerable/VulnerableApplication.class
