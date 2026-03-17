@@ -21,7 +21,7 @@ public class UserService {
     // SAST Vulnerability #1: Hardcoded credentials
     private static final String ADMIN_PASSWORD = "admin123456";
     private static final String DB_PASSWORD = "P@ssw0rd2024";
-    private static final String API_KEY = "1234";
+    private static final String API_KEY = "sk_live_51234567890abcdefghijklmnop";
 
     public List<User> getAllUsers() {
         return userRepository.findAll();
