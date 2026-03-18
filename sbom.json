@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:e26e7ee5-90d5-4956-a97f-64a6c18c71ad",
+  "serialNumber": "urn:uuid:9bff8934-f4f5-4733-9377-cb7dee0fe90c",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-03-18T09:48:42+00:00",
+    "timestamp": "2026-03-18T10:42:27+00:00",
     "tools": {
       "components": [
         {
@@ -20,9 +20,9 @@
       ]
     },
     "component": {
-      "bom-ref": "0abac284-d421-4dfa-bccc-7c84750ab4c5",
+      "bom-ref": "bd790d2d-931d-4e81-8e6e-4cd36b7248ce",
       "type": "application",
-      "name": ".",
+      "name": "vulnerable-app",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "8e4b95df-ca67-4a4f-aab7-70dc7b2c0615",
+      "bom-ref": "b7edf9cb-377c-4c83-87c6-158975ffbf22",
       "type": "application",
       "name": "go.mod",
       "properties": [
@@ -208,22 +208,22 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.3.3",
+      "bom-ref": "pkg:golang/github.com/go-redis/redis@v6.15.9%2Bincompatible",
       "type": "library",
-      "name": "github.com/golang/protobuf",
-      "version": "v1.3.3",
+      "name": "github.com/go-redis/redis",
+      "version": "v6.15.9+incompatible",
       "licenses": [
         {
           "license": {
-            "id": "BSD-3-Clause"
+            "id": "BSD-2-Clause"
           }
         }
       ],
-      "purl": "pkg:golang/github.com/golang/protobuf@v1.3.3",
+      "purl": "pkg:golang/github.com/go-redis/redis@v6.15.9%2Bincompatible",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/golang/protobuf@v1.3.3"
+          "value": "github.com/go-redis/redis@v6.15.9+incompatible"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -232,10 +232,58 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/json-iterator/go@v1.1.9",
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.4",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.5.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/golang/protobuf@v1.5.4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/go-cmp@v0.7.0",
+      "type": "library",
+      "name": "github.com/google/go-cmp",
+      "version": "v0.7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/google/go-cmp@v0.7.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/google/go-cmp@v0.7.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/json-iterator/go@v1.1.11",
       "type": "library",
       "name": "github.com/json-iterator/go",
-      "version": "v1.1.9",
+      "version": "v1.1.11",
       "licenses": [
         {
           "license": {
@@ -243,11 +291,11 @@
           }
         }
       ],
-      "purl": "pkg:golang/github.com/json-iterator/go@v1.1.9",
+      "purl": "pkg:golang/github.com/json-iterator/go@v1.1.11",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/json-iterator/go@v1.1.9"
+          "value": "github.com/json-iterator/go@v1.1.11"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -304,10 +352,10 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180228061459-e0a39a4cb421",
+      "bom-ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
       "type": "library",
       "name": "github.com/modern-go/concurrent",
-      "version": "v0.0.0-20180228061459-e0a39a4cb421",
+      "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
       "licenses": [
         {
           "license": {
@@ -315,11 +363,11 @@
           }
         }
       ],
-      "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180228061459-e0a39a4cb421",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/modern-go/concurrent@v0.0.0-20180228061459-e0a39a4cb421"
+          "value": "github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -328,10 +376,10 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/modern-go/reflect2@v0.0.0-20180701023420-4b7aa43c6742",
+      "bom-ref": "pkg:golang/github.com/modern-go/reflect2@v1.0.1",
       "type": "library",
       "name": "github.com/modern-go/reflect2",
-      "version": "v0.0.0-20180701023420-4b7aa43c6742",
+      "version": "v1.0.1",
       "licenses": [
         {
           "license": {
@@ -339,11 +387,83 @@
           }
         }
       ],
-      "purl": "pkg:golang/github.com/modern-go/reflect2@v0.0.0-20180701023420-4b7aa43c6742",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@v1.0.1",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/modern-go/reflect2@v0.0.0-20180701023420-4b7aa43c6742"
+          "value": "github.com/modern-go/reflect2@v1.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/onsi/ginkgo@v1.16.5",
+      "type": "library",
+      "name": "github.com/onsi/ginkgo",
+      "version": "v1.16.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/onsi/ginkgo@v1.16.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/onsi/ginkgo@v1.16.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/onsi/gomega@v1.39.1",
+      "type": "library",
+      "name": "github.com/onsi/gomega",
+      "version": "v1.39.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/onsi/gomega@v1.39.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/onsi/gomega@v1.39.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/stretchr/testify@v1.7.0",
+      "type": "library",
+      "name": "github.com/stretchr/testify",
+      "version": "v1.7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/stretchr/testify@v1.7.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/stretchr/testify@v1.7.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -376,10 +496,10 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/golang.org/x/crypto@v0.0.0-20210322153248-0c34fe9e7dc2",
+      "bom-ref": "pkg:golang/golang.org/x/crypto@v0.47.0",
       "type": "library",
       "name": "golang.org/x/crypto",
-      "version": "v0.0.0-20210322153248-0c34fe9e7dc2",
+      "version": "v0.47.0",
       "licenses": [
         {
           "license": {
@@ -387,11 +507,11 @@
           }
         }
       ],
-      "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20210322153248-0c34fe9e7dc2",
+      "purl": "pkg:golang/golang.org/x/crypto@v0.47.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "golang.org/x/crypto@v0.0.0-20210322153248-0c34fe9e7dc2"
+          "value": "golang.org/x/crypto@v0.47.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -400,10 +520,10 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20201119102817-f84b799fce68",
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.40.0",
       "type": "library",
       "name": "golang.org/x/sys",
-      "version": "v0.0.0-20201119102817-f84b799fce68",
+      "version": "v0.40.0",
       "licenses": [
         {
           "license": {
@@ -411,11 +531,35 @@
           }
         }
       ],
-      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20201119102817-f84b799fce68",
+      "purl": "pkg:golang/golang.org/x/sys@v0.40.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "golang.org/x/sys@v0.0.0-20201119102817-f84b799fce68"
+          "value": "golang.org/x/sys@v0.40.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.36.7",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.36.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.36.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "google.golang.org/protobuf@v1.36.7"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -446,19 +590,48 @@
           "value": "gomod"
         }
       ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b",
+      "type": "library",
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.0-20210107192922-496545a6307b",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
     }
   ],
   "dependencies": [
     {
-      "ref": "0abac284-d421-4dfa-bccc-7c84750ab4c5",
+      "ref": "b7edf9cb-377c-4c83-87c6-158975ffbf22",
       "dependsOn": [
-        "8e4b95df-ca67-4a4f-aab7-70dc7b2c0615"
+        "pkg:golang/github.com/example/vulnerable-go-service"
       ]
     },
     {
-      "ref": "8e4b95df-ca67-4a4f-aab7-70dc7b2c0615",
+      "ref": "bd790d2d-931d-4e81-8e6e-4cd36b7248ce",
       "dependsOn": [
-        "pkg:golang/github.com/example/vulnerable-go-service"
+        "b7edf9cb-377c-4c83-87c6-158975ffbf22"
       ]
     },
     {
@@ -470,22 +643,27 @@
       "dependsOn": [
         "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0%2Bincompatible",
         "pkg:golang/github.com/gin-gonic/gin@v1.6.3",
-        "pkg:golang/golang.org/x/crypto@v0.0.0-20210322153248-0c34fe9e7dc2",
+        "pkg:golang/github.com/go-redis/redis@v6.15.9%2Bincompatible",
+        "pkg:golang/github.com/onsi/ginkgo@v1.16.5",
+        "pkg:golang/golang.org/x/crypto@v0.47.0",
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0"
       ]
     },
     {
       "ref": "pkg:golang/github.com/gin-contrib/sse@v0.1.0",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:golang/github.com/stretchr/testify@v1.7.0"
+      ]
     },
     {
       "ref": "pkg:golang/github.com/gin-gonic/gin@v1.6.3",
       "dependsOn": [
         "pkg:golang/github.com/gin-contrib/sse@v0.1.0",
         "pkg:golang/github.com/go-playground/validator/v10@v10.2.0",
-        "pkg:golang/github.com/golang/protobuf@v1.3.3",
-        "pkg:golang/github.com/json-iterator/go@v1.1.9",
+        "pkg:golang/github.com/golang/protobuf@v1.5.4",
+        "pkg:golang/github.com/json-iterator/go@v1.1.11",
         "pkg:golang/github.com/mattn/go-isatty@v0.0.12",
+        "pkg:golang/github.com/stretchr/testify@v1.7.0",
         "pkg:golang/github.com/ugorji/go/codec@v1.1.7",
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0"
       ]
@@ -509,50 +687,95 @@
       ]
     },
     {
-      "ref": "pkg:golang/github.com/golang/protobuf@v1.3.3",
+      "ref": "pkg:golang/github.com/go-redis/redis@v6.15.9%2Bincompatible",
       "dependsOn": []
     },
     {
-      "ref": "pkg:golang/github.com/json-iterator/go@v1.1.9",
+      "ref": "pkg:golang/github.com/golang/protobuf@v1.5.4",
       "dependsOn": [
-        "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180228061459-e0a39a4cb421",
-        "pkg:golang/github.com/modern-go/reflect2@v0.0.0-20180701023420-4b7aa43c6742"
+        "pkg:golang/github.com/google/go-cmp@v0.7.0",
+        "pkg:golang/google.golang.org/protobuf@v1.36.7"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/google/go-cmp@v0.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/json-iterator/go@v1.1.11",
+      "dependsOn": [
+        "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+        "pkg:golang/github.com/modern-go/reflect2@v1.0.1",
+        "pkg:golang/github.com/stretchr/testify@v1.7.0"
       ]
     },
     {
       "ref": "pkg:golang/github.com/leodido/go-urn@v1.2.0",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:golang/github.com/stretchr/testify@v1.7.0"
+      ]
     },
     {
       "ref": "pkg:golang/github.com/mattn/go-isatty@v0.0.12",
       "dependsOn": [
-        "pkg:golang/golang.org/x/sys@v0.0.0-20201119102817-f84b799fce68"
+        "pkg:golang/golang.org/x/sys@v0.40.0"
       ]
     },
     {
-      "ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180228061459-e0a39a4cb421",
+      "ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
       "dependsOn": []
     },
     {
-      "ref": "pkg:golang/github.com/modern-go/reflect2@v0.0.0-20180701023420-4b7aa43c6742",
+      "ref": "pkg:golang/github.com/modern-go/reflect2@v1.0.1",
       "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/onsi/ginkgo@v1.16.5",
+      "dependsOn": [
+        "pkg:golang/github.com/onsi/gomega@v1.39.1",
+        "pkg:golang/golang.org/x/sys@v0.40.0"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/onsi/gomega@v1.39.1",
+      "dependsOn": [
+        "pkg:golang/github.com/google/go-cmp@v0.7.0",
+        "pkg:golang/google.golang.org/protobuf@v1.36.7"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/stretchr/testify@v1.7.0",
+      "dependsOn": [
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b"
+      ]
     },
     {
       "ref": "pkg:golang/github.com/ugorji/go/codec@v1.1.7",
       "dependsOn": []
     },
     {
-      "ref": "pkg:golang/golang.org/x/crypto@v0.0.0-20210322153248-0c34fe9e7dc2",
+      "ref": "pkg:golang/golang.org/x/crypto@v0.47.0",
       "dependsOn": [
-        "pkg:golang/golang.org/x/sys@v0.0.0-20201119102817-f84b799fce68"
+        "pkg:golang/golang.org/x/sys@v0.40.0"
       ]
     },
     {
-      "ref": "pkg:golang/golang.org/x/sys@v0.0.0-20201119102817-f84b799fce68",
+      "ref": "pkg:golang/golang.org/x/sys@v0.40.0",
       "dependsOn": []
     },
     {
+      "ref": "pkg:golang/google.golang.org/protobuf@v1.36.7",
+      "dependsOn": [
+        "pkg:golang/github.com/golang/protobuf@v1.5.4",
+        "pkg:golang/github.com/google/go-cmp@v0.7.0"
+      ]
+    },
+    {
       "ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b",
       "dependsOn": []
     }
   ],
